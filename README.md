@@ -31,8 +31,8 @@ Apply the Laplacian operator to the RGB image (image2) using OpenCV's cv2.Laplac
 <br>
 
 ## Program:
-### Developed By : Jeyabalan T
-### Register Number: 212222240040
+### Developed By : ASWINTH T
+### Register Number: 212222230015
 </br>
 
 ### 1. Smoothing Filters
@@ -59,6 +59,10 @@ plt.imshow(image3)
 plt.title('Filtered')
 plt.axis('off')
 ```
+#### OUTPUT:
+
+![image](https://github.com/user-attachments/assets/bd1c9539-4633-4d5c-a600-bc3b8ff0c427)
+
 ii) Using Weighted Averaging Filter
 ```Python
 import cv2
@@ -72,6 +76,10 @@ image4 = cv2.filter2D(image2, -1, kernel2)
 plt.imshow(image4)
 plt.title('Weighted Averaging Filtered')
 ```
+#### OUTPUT
+
+![image](https://github.com/user-attachments/assets/d2a87725-de92-49f5-966c-cb059be0379f)
+
 iii) Using Gaussian Filter
 ```Python
 import cv2
@@ -85,6 +93,10 @@ plt.imshow(gaussian_blur)
 plt.title(' Gaussian Blurring Filtered')
 ```
 
+#### OUTPUT:
+
+![image](https://github.com/user-attachments/assets/a12cd949-493b-4bc9-a47e-7882ee99deb5)
+
 iv) Using Median Filter
 ```Python
 import cv2
@@ -97,6 +109,9 @@ median=cv2.medianBlur (src=image2, ksize=11)
 plt.imshow(median)
 plt.title(' Median Blurring Filtered')
 ```
+#### OUTPUT:
+
+![image](https://github.com/user-attachments/assets/7670fa2b-5128-4e0f-8f2d-bbcf6c9d6da5)
 
 ### 2. Sharpening Filters
 i) Using Laplacian Kernal
@@ -112,6 +127,10 @@ image5 =cv2.filter2D(image2, -1, kernel3)
 plt.imshow(image5)
 plt.title('Laplacian Kernel')
 ```
+##### OUTPUT:
+
+![image](https://github.com/user-attachments/assets/6ca05df7-8d45-4bad-ad5d-3bbf8a149883)
+
 ii) Using Laplacian Operator
 ```Python
 import cv2
@@ -124,33 +143,10 @@ new_image = cv2.Laplacian (image2, cv2.CV_64F)
 plt.imshow(new_image)
 plt.title('Laplacian Operator')
 ```
-### OUTPUT:
 
-### 1. Smoothing Filters
 
-#### i) Using Averaging Filter
 
-![image](https://github.com/user-attachments/assets/bd1c9539-4633-4d5c-a600-bc3b8ff0c427)
-
-#### ii) Using Weighted Averaging Filter
-
-![image](https://github.com/user-attachments/assets/d2a87725-de92-49f5-966c-cb059be0379f)
-
-#### iii) Using Gaussian Filter
-
-![image](https://github.com/user-attachments/assets/a12cd949-493b-4bc9-a47e-7882ee99deb5)
-
-#### iv) Using Median Filter
-
-![image](https://github.com/user-attachments/assets/7670fa2b-5128-4e0f-8f2d-bbcf6c9d6da5)
-
-### 2. Sharpening Filters
-
-##### i) Using Laplacian Kernal
-
-![image](https://github.com/user-attachments/assets/6ca05df7-8d45-4bad-ad5d-3bbf8a149883)
-
-#### ii) Using Laplacian Operator
+#### OUTPUT:
 
 ![image](https://github.com/user-attachments/assets/25568d55-1bfb-47ea-8452-02cdaaa79ccd)
 
